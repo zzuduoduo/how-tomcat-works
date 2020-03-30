@@ -14,6 +14,7 @@ public class HttpConnector implements Runnable {
         ServerSocket serverSocket = null;
         try{
             serverSocket = new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
+            System.out.println("success");
         }catch (IOException e){
             System.out.println("open server fail"+e);
             exit(1);
